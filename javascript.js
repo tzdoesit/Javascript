@@ -1,15 +1,26 @@
 
-const name = "Tommy";
-const greeting = `hello, ${name}`;
-console.log(greeting);
 
-let text = "HELLOOOO WORLD";
-let char = text.charAt(6);
-let length = text.length;
+const button = document.querySelector("button");
 
-console.log(text, char, length);
+button.addEventListener("click", updateName);
 
-let letter = name[2];
+function updateName() {
+    const name = prompt("Enter a new name");
+    button.textContent = `Player 1: ${name}`;
+}
+
+
+// const name = "Tommy";
+// const greeting = `hello, ${name}`;
+// console.log(greeting);
+
+// let text = "HELLOOOO WORLD";
+// let char = text.charAt(6);
+// let length = text.length;
+
+// console.log(text, char, length);
+
+// let letter = name[2];
 
 // var text = "HELLO WORLD";
 // document.getElementById("demo").innerHTML = text.charAt(0);
