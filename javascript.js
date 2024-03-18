@@ -1,13 +1,35 @@
 
 
+// const button = document.querySelector("button");
+
+// button.addEventListener("click", updateName);
+
+// function updateName() {
+//     const name = prompt("Enter a new name");
+//     button.textContent = `Player 1: ${name}`;
+// }
+
+// const button = document.querySelector("button");
+
+// function greet() {
+// const name = prompt ("What is your name?");
+// const greeting = document.querySelector("#greeting");
+// greeting.textContent = `hello ${name}, nice to see you!`;
+// }
+
+// button.addEventListener("click", greet);
+
+// ---------------
+
 const button = document.querySelector("button");
 
-button.addEventListener("click", updateName);
-
-function updateName() {
-    const name = prompt("Enter a new name");
-    button.textContent = `Player 1: ${name}`;
+function greet() {
+  const name = prompt("What is your name?");
+  const greeting = document.querySelector("#greeting");
+  greeting.textContent = `Hello ${name}, nice to see you!`;
 }
+greeting = document.getElementById("trash");
+button.addEventListener("click", greet);
 
 
 // const name = "Tommy";
