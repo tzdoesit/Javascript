@@ -1,5 +1,50 @@
 
 
+const cats = ["Pete", "Biggles", "Jasmine"];
+
+let myFavoriteCats = "My cats are called ";
+
+// for (const cat of cats) {
+//     myFavoriteCats += `${cat}, `;
+// }
+
+for (let i = 0; i < cats.length; i++) {
+    if (i === cats.length - 1) {
+        myFavoriteCats += `and ${cats[i]}.`;
+    }
+    else {
+        myFavoriteCats += `${cats[i]}, `;
+    }
+}
+
+console.log(myFavoriteCats);
+
+// you can nest arrays inside of an array, this is used somewhat often
+// let a = [
+//     ["A", "B"],
+//     [1, 2],
+// ]
+
+// console.log(a[0][0])
+// console.log(a[1])
+
+// const fruits = ["banana", "apple", "pear", "orange"];
+// fruits.push(["mango"]);
+// console.log(fruits);
+// fruits.shift();
+// console.log(fruits);
+// fruits.unshift("lemon");
+// console.log(fruits);
+// fruits[fruits.length] = "kiwi";
+// console.log(fruits);
+// fruits.pop();
+// console.log(fruits);
+
+// for (const fruit of fruits) {
+//     console.log(fruit);
+// }
+
+
 // const button = document.querySelector("button");
 
 // button.addEventListener("click", updateName);
@@ -30,14 +75,14 @@
 //     button.textContent = `Player 1: ${name}`;
 // }
 
-function greet() {
-  const name = prompt("What is your name?");
-  const greeting = document.querySelector("#greeting");
-  greeting.textContent = `Hello ${name}, nice to see you!`;
-}
+// function greet() {
+//   const name = prompt("What is your name?");
+//   const greeting = document.querySelector("#greeting");
+//   greeting.textContent = `Hello ${name}, nice to see you!`;
+// }
 
-greeting = document.getElementById("trash");
-button.addEventListener("click", greet);
+// greeting = document.getElementById("trash");
+// button.addEventListener("click", greet);
 
 
 // const name = "Tommy";
